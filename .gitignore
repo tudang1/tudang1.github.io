@@ -1,0 +1,6 @@
+# file k muốn đẩy lên
+content.txt
+
+# bỏ đồng loạt các file
+*.txt
+.gitattributes

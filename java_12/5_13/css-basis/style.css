@@ -1,0 +1,35 @@
+h2{
+    color: red;
+}
+/* gọi của id */
+#heading {
+    color: blue;
+}
+ 
+p{color: green;}
+
+.text{
+    color: blue;
+    background-color:blanchedalmond;
+    }
+    /* tăng size chữ */
+.text1{font-size: 20px;}
+/* gọi cua class box */
+.box p {
+    font-weight: bold;
+}
+/* căn giữa */
+h2, p{
+    text-align: center;
+}
+
+#heading + .box{
+    background-color: cadetblue;
+}
+/* các class text sau p */
+/* in nghiêng */
+p ~ .text {
+    font-style: italic;
+}
+/* chọn thẻ text ngay sau p trong thẻ box */
+.box p.text{}

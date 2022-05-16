@@ -1,0 +1,26 @@
+/* clear một số thuộc tính về trạng thái ban đầu */
+*{
+    /* margin là khoảng cách  khung trên vời khung dưới */
+    margin:0%;
+    /* padding là khoảng cách khung với nội dung */
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* img {
+    max-width: 100%;
+    display: ;
+
+} */
+.content{
+    padding: 20px;
+}
+/* .title{
+    font
+
+} */
+footer div ul {
+    list-style-type: none;
+}
