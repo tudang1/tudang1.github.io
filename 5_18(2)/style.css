@@ -8,36 +8,44 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* container */
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1260px;
-    justify-content:space-evenly;
 
-
-}
-.image{
-    height: 240px;
-
-}
+/* Auto xuất hiện nếu trang web có ảnh */
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     display: block;
     margin: auto;
-    object-fit: cover; 
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    /* gữi tỷ lệ ban đầu */
+     object-fit: cover; 
 }
 
+.container {
+    width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses-item {
+    flex-basis: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+
+/* style card */
 .card {
-    width: 360px;
-    height: 396px;
+    height: 100%;
     box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
-    margin: 10px;
-    /* margin-top: 20px; */
+    margin: auto;
+    
+
     border-radius: 5px;
     overflow: hidden;
-
 }
 
 .content {
@@ -49,6 +57,7 @@ img {
     color : #464646;
     font-weight: 400;
 }
+
 .info {
     display: flex;
     justify-content: space-between;
@@ -93,12 +102,14 @@ footer{
     /* background-size: 100%; */
     box-sizing: border-box;
     color: #fff;
-    padding: 40px;
+    padding: 20px;
     font-size: 14px;
-    margin: auto;
-    padding-top: 0px;
+    
 }
-
+div{
+    margin-bottom: 16px;
+    line-height: 35px;
+}
 footer div ul {
     list-style-type: none;
 }
@@ -106,6 +117,4 @@ footer div ul {
 .footercontent{
     padding: 20px;
     flex-basis: 25%;
-    margin-bottom: 16px;
-    line-height: 35px
 }
