@@ -3,15 +3,127 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header{
+    height: 54px;
+    background-color: #30598c;
+    display: flex;  
+    position: sticky;
+    /* muốn làm sticky phải set vị trí */
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.sidebar{
+    display: flex;
+    align-items: center;
+    
+}
+/* styte menu */
+.menu > ul{
+    display:flex;
+   
+}
+ul{
+    /* xóa chấm đầu dòng */
+    list-style-type: none;
+}
 
+.menu-item{
+    color: #fff;
+    font-size: 15px;
+    margin: 0 15px;
+    display: flex;
+    /* căn giữa */
+    align-items: center;
+    display: flex;
+    /* để khi di chuyển chọn các option thì submenu k biến mất */
+    position: relative;
+    height: 60px;
+}
+img{
+    /* max-width: 100%; */
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 100%;
+    object-fit: cover; 
+}
+.logo img{
+    width: 100px;
+}
+.avatar{height: 54px;}
+.avatar img{
+    width: 32px;
+    height: 32px;
+    /* bo tròn khung */
+    border-radius: 50%;
+    margin: 10px 15px;
+
+}
+.menu-item span {
+    margin-left: 5px;
+}
+.cart-icon{
+    font-size: 24px;
+    color: #fff;
+}
+.cart{position: relative;}
+/* number */
+.number{
+    background-color: #26a69a;
+    width: 18px;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    top: -13px;
+    right: -12px;
+}
+/* submenu */
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    border-radius: 10px;
+    color: #212529;
+    /* cho ẩn submenu */
+    display: none;
+}
+.sub-menu-item{
+    padding: 11px 16px;
+    text-align: center;
+}
+.avatar:hover .sub-menu{
+    display: block;
+}
+/* khi di chuyển trỏ chuột vào menu thì hiện sub menu */
+
+.menu-item:hover .sub-menu{
+    display: block;
+}
+/* khi chạm vào option sẽ sáng color thay đổi */
+.sub-menu-item:hover {
+    background-color: #c4c4c4;
+    color: #ffff;
+
+}
+.menu-item:hover{
+    color: #c4c4c4;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
 button{font-size: 20px;
-    background-color: rgb(177, 210, 199);
-    overflow: hidden;
+    background-color:white;
+    border: none;
     
 }
+button a{color: #212529;}
     
 /* container */
 .container{
